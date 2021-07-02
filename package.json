@@ -1,6 +1,6 @@
 {
   "name": "toggleable-text",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "react component that upon custom defined state change will turn text into editable input components, will render an unstyled input or text --> pass through custom styling as a prop to style the inpur field in the div",
   "main": "index.js",
   "scripts": {
