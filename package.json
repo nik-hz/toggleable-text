@@ -1,7 +1,7 @@
 {
   "name": "toggleable-text",
   "version": "1.0.0",
-  "description": "react component that upon custom defined state change will turn text into editable input components",
+  "description": "react component that upon custom defined state change will turn text into editable input components, will render an unstyled input or text --> pass through custom styling as a prop to style the inpur field in the div",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,10 @@
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.6.1",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -19,6 +22,9 @@
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   }
 }

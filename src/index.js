@@ -1,13 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export default class DummyComponent extends Component {
-
-    render () {
-
-        return (
-            <div>I am a dummy react npm module</div>
-        )
-
+const Toggle = ({
+    toggleState,
+    toggleText,
+    inputStyleFromParent,
+    textStyleFromParent,
+}) => {
+    const renderText = () => {
+        return <div style={inputStyleFromParent}>{toggleText}</div>
     }
 
+    const renderInput = () => {
+        return (
+            <div>
+                <input type="text" value={toggleText} />
+            </div>
+        )
+    }
+
+    return <div>{toggleState ? renderText() : renderInput()}</div>
 }
+
+export default Toggle
