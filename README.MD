@@ -3,6 +3,7 @@
 Hello and welcome to the docs for toggleable text js. This is a standalone react component that toggles between normal text and an input field to add on the fly customization to your react projects.
 
 <a href="https://github.com/nik-hz/toggleable-text">GitHub repo</a>
+<a href="https://www.npmjs.com/package/toggleable-text">npm page</a>
 
 ```
 npm i toggleable-text
