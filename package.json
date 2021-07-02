@@ -10,8 +10,8 @@
   "author": "nik-hz",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^16.6.1",
-    "react-dom": "^16.6.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-redux": "^7.2.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
