@@ -4,6 +4,7 @@ Hello and welcome to the docs for toggleable text js. This is a standalone react
 
 <a href="https://github.com/nik-hz/toggleable-text">GitHub repo</a>
 <a href="https://www.npmjs.com/package/toggleable-text">npm page</a>
+<a href="https://toggler-app.herokuapp.com/">demo page</a>
 
 ```
 npm i toggleable-text
