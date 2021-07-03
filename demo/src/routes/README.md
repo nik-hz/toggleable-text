@@ -1,12 +1,16 @@
-# Toggleable Text <a name="introduction"></a>
+# Toggleable Text
 
 Hello and welcome to the docs for toggleable text js. This is a standalone react component that toggles between normal text and an input field to add on the fly customization to your react projects.
 
-<a href="https://github.com/nik-hz/toggleable-text">GitHub repo</a>
-<a href="https://www.npmjs.com/package/toggleable-text">npm page</a>
+https://github.com/nik-hz/toggleable-text
+
+https://www.npmjs.com/package/toggleable-text
 
 ```
+----------------------------------------------------------------------------------------------------------------
+Download:
 npm i toggleable-text
+----------------------------------------------------------------------------------------------------------------
 ```
 
 ## Table of contents
@@ -20,7 +24,7 @@ npm i toggleable-text
 3. [Full code example](#fullcodeexample)
 4. [Contributing](#contributing)
 
-## Getting Started <a name="getting-started"></a>
+## Getting Started
 
 Toggleable text is a react component that you can import into your projects and with little set up incorporate toggleable text/input fields everywhere.
 
@@ -31,12 +35,20 @@ Usage is easy, import into your project, wire up the state management (more on t
 Advice: use a local state in the parent to manage the components even if using redux
 
 ```js
+//----------------------------------------------------------------------------------------------------------------
+
+// Import
+
 import Toggle from 'toggleable-text'
+
+//----------------------------------------------------------------------------------------------------------------
 ```
 
 to use Toggle you MUST define a local state that stores a Boolean with default false to toggle the Toggle component. You also need some sort of event to change the local state. Example:
 
 ```js
+//----------------------------------------------------------------------------------------------------------------
+
 // local state object that determines whether the toggler is in input or edit mode. Default should be false
 const [input, setInput] = useState(false)
 
@@ -56,19 +68,19 @@ return (
 )
 
 // your code here
+
+//----------------------------------------------------------------------------------------------------------------
 ```
 
-```js
-
-```
-
-### multiple toggleable inputs<a name="subparagraph1"></a>
+### multiple toggleable inputs
 
 When running multiple toggleable inputs in one Component, it is advisable to manage them with a single useState constructor.
 
 To do this, assign IDs to each toggleable input as shown below:
 
 ```js
+//----------------------------------------------------------------------------------------------------------------
+
 // your code goes here
 
 const [text, setText] = useState({
@@ -102,21 +114,25 @@ return (
 
     // your code goes here
 )
+
+//----------------------------------------------------------------------------------------------------------------
 ```
 
-### single toggleable input <a name="subparagraph2"></a>
+### single toggleable input
 
 if you're using a single toggleable input then you can skip the assigning IDs step, and directly change the local state. (if this confuses you, follow the above example)
 
-### integrating with redux <a name="subparagraph3"></a>
+### integrating with redux
 
 i would recommend that even if you choose to add redux as state management that you keep the local state as a in between step. This lets you add your own functionality between the toggleable text and redux.
 
 in the future there may be a redux integrated version of Toggle but not yet.
 
-### prop list<a name="subparagraph4"></a>
+### prop list
 
 All props that can be passed into the Toggle component
+
+```
 
 | Prop       | Value                                                                  | Function                            |
 | ---------- | ---------------------------------------------------------------------- | ----------------------------------- |
@@ -127,7 +143,11 @@ All props that can be passed into the Toggle component
 | inputStyle | inline or style object                                                 | sets style                          |
 | textStyle  | inline or style object                                                 | sets style                          |
 
+```
+
 ```js
+//----------------------------------------------------------------------------------------------------------------
+
 // your code goes here
 
 <Toggle
@@ -139,11 +159,14 @@ All props that can be passed into the Toggle component
     inputStyle={{ background: 'red' }}
     textStyle={styles.toggleableText}
 />
+//----------------------------------------------------------------------------------------------------------------
 ```
 
-## Full code example <a name="fullcodeexample"></a>
+## Full code example
 
 ```js
+//----------------------------------------------------------------------------------------------------------------
+
 import React, { useState } from 'react'
 
 import logo from './logo.svg'
@@ -216,8 +239,9 @@ const App = () => {
 }
 
 export default App
+//----------------------------------------------------------------------------------------------------------------
 ```
 
-## Contributing <a name="contributing"></a>
+## Contributing
 
 If you want to help make a version of this with redux integration feel free :)
